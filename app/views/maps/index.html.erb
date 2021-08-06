@@ -1,4 +1,4 @@
-<h2>gmap</h2>
+<h2>Google Maps</h2>
 <div id='map'></div>
 
 <style>
@@ -10,12 +10,12 @@
 <script>
 function initMap(){
   let map = new google.maps.Map(document.getElementById('map'), {
-  center: {lat: -34.397, lng: 150.644},
-  zoom: 8
+  center: {lat: 35.1239654, lng: 136.9417741},
+  zoom: 15
   });
 }
 </script>
 
 <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-q6QI35TlA4HYSfiMRiDlK-4OmMHkX_Q&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_API_KEY'] %>&callback=initMap">
 </script>

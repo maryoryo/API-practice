@@ -10,4 +10,7 @@ Rails.application.routes.draw do
   resources :posts
   
   get 'maps/index'
+
+  post '/callback' => 'linebots#callback'
+
 end
